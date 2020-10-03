@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-    <View
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="start"
-        android:layout_weight="1"
-        android:background="@android:color/holo_red_light" />
+    <!--Attention! here goes all the sub views, this is the start of the FrameLayout body.-->
 
-    <View
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="2"
-        android:background="@android:color/holo_green_light" />
+    <!--Our new code goes here-->
 
-    <View
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="end"
-        android:layout_weight="3"
-        android:background="@android:color/holo_blue_light" />
-
-</LinearLayout>
+    <!--Attention! This is the end of the FrameLayout body.-->
+</FrameLayout>
