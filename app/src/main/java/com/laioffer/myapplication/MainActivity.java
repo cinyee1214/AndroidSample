@@ -12,6 +12,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final TextView welcomeTextView = findViewById(R.id.welcomeTextView);
+        final EditText nameEditText = findViewById(R.id.nameEditText);
+        final EditText emailEditText = findViewById(R.id.emailEditText);
+        Button submitButton = findViewById(R.id.submitButton);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = nameEditText.getText().toString();
+                String email = emailEditText.getText().toString();
+                welcomeTextView.setText("Welcome " + name + ", your email is: " + email);
+            }
+        });
+
         Log.d(TAG, "We are at onCreate()");
     }
 
